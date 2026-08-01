@@ -1,86 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Kaustuv Bhattacharjee">
-    <meta name="author" content="Kaustuv Bhattacharjee">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>About | Kaustuv Bhattacharjee</title>
 
+    <meta name="description"
+          content="Learn more about Kaustuv Bhattacharjee, Computer Science Engineering student, Web Developer, AI Enthusiast and Cybersecurity learner.">
+
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <script defer src="js/script.js"></script>
+
 </head>
 
 <body>
 
-<header>
-    <h1>About Me</h1>
-</header>
+    <!-- Skip Link -->
 
-<nav aria-label="Primary Navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <a href="#main-content"
+       class="skip-link">
 
-<main>
+        Skip to Main Content
 
-<section>
+    </a>
 
-<h2>Who Am I?</h2>
+    <!-- Header -->
 
-<p>
-I am an aspiring Computer Science Professional with interests in Artificial Intelligence, Cybersecurity, Web Development, and creating accessible websites.
-</p>
+    <header class="header">
 
-</section>
+        <div class="container">
 
-<section>
+            <h1 class="logo">
 
-<h2>Education</h2>
+                KB.
 
-<ul>
-<li>B.Tech in Computer Science and Engineering</li>
-<li>Currently pursuing my degree</li>
-</ul>
+            </h1>
 
-</section>
+            <nav
+                class="navbar"
+                aria-label="Primary Navigation">
 
-<section>
+                <button
+                    class="menu-toggle"
+                    aria-label="Toggle Navigation">
 
-<h2>Technical Skills</h2>
+                    ☰
 
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript</li>
-<li>Java</li>
-<li>Python</li>
-<li>C++</li>
-</ul>
+                </button>
 
-</section>
+                <ul class="nav-links">
 
-<section>
+                    <li><a href="index.html">Home</a></li>
 
-<h2>Career Objective</h2>
+                    <li><a href="about.html"
+                           class="active">About</a></li>
 
-<p>
-To build innovative, user-friendly, and accessible software solutions while continuously improving my technical and professional skills.
-</p>
+                    <li><a href="projects.html">Projects</a></li>
 
-</section>
+                    <li><a href="contact.html">Contact</a></li>
 
-</main>
+                </ul>
 
-<footer>
-<p>&copy; 2026 Kaustuv Bhattacharjee. All Rights Reserved.</p>
-</footer>
+            </nav>
 
-<script src="js/script.js"></script>
+            <button
+                id="themeToggle"
+                aria-label="Toggle Theme">
+
+                🌙
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Main -->
+
+    <main id="main-content">
+
+        <!-- Hero -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <h2>
+
+                    About Me
+
+                </h2>
+
+                <p>
+
+                    Passionate about creating responsive,
+                    accessible and modern web applications.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+
+        <section class="about-section">
+
+            <div class="container about-grid">
+
+                <div>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700"
+                        alt="Profile Picture"
+                        class="profile-image">
+
+                </div>
+
+                <div>
+
+                    <h2>
+
+                        Hello!
+
+                    </h2>
+
+                    <p>
+
+                        I am
+                        <strong>Kaustuv Bhattacharjee</strong>,
+                        a Computer Science Engineering student
+                        passionate about software development,
+                        Artificial Intelligence,
+                        Cybersecurity,
+                        and modern web technologies.
+
+                    </p>
+
+                    <p>
+
+                        I enjoy solving real-world problems
+                        using clean code,
+                        responsive interfaces,
+                        and scalable software solutions.
+
+                    </p>
+
+                    <p>
+
+                        My goal is to become a software engineer
+                        capable of building secure,
+                        efficient,
+                        and user-friendly applications.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Education -->
+
+        <section class="education">
+
+            <div class="container">
+
+                <h2 class="section-title">
+
+                    Education
+
+                </h2>
+
+                <div class="timeline">
+
+                    <article class="timeline-card">
+
+                        <h3>
+
+                            Bachelor of Technology
+
+                        </h3>
+
+                        <h4>
+
+                            Computer Science Engineering
+
+                        </h4>
+
+                        <p>
+
+                            Hindustan Institute of Technology
+                            and Science
+
+                        </p>
+
+                        <span>
+
+                            2024 - Present
+
+                        </span>
+
+                    </article>
+
+                    <article class="timeline-card">
+
+                        <h3>
+
+                            Higher Secondary
+
+                        </h3>
+
+                        <p>
+
+                            Science Stream
+
+                        </p>
+
+                        <span>
+
+                            Completed
+
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Technical Skills -->
+
+        <section class="skills-section">
+
+            <div class="container">
+
+                <h2 class="section-title">
+
+                    Technical Skills
+
+                </h2>
+
+                <div class="skill-grid">
+
+                    <article class="card">
+
+                        <h3>HTML5</h3>
+
+                        <p>
+
+                            Semantic Structure,
+                            Accessibility,
+                            SEO
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>CSS3</h3>
+
+                        <p>
+
+                            Grid,
+                            Flexbox,
+                            Animations,
+                            Responsive Design
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+
+                            DOM,
+                            ES6,
+                            APIs,
+                            UI Interactions
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>Python</h3>
+
+                        <p>
+
+                            Automation,
+                            Data Analysis,
+                            Machine Learning
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>SQL</h3>
+
+                        <p>
+
+                            Database Design,
+                            Query Optimization
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>Git & GitHub</h3>
+
+                        <p>
+
+                            Version Control,
+                            Collaboration,
+                            GitHub Pages
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Interests -->
+
+        <section class="interests">
+
+            <div class="container">
+
+                <h2 class="section-title">
+
+                    Interests
+
+                </h2>
+
+                <div class="feature-grid">
+
+                    <div class="feature-box">
+
+                        💻
+
+                        <h3>
+
+                            Web Development
+
+                        </h3>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        🤖
+
+                        <h3>
+
+                            Artificial Intelligence
+
+                        </h3>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        🔐
+
+                        <h3>
+
+                            Cybersecurity
+
+                        </h3>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        ⚽
+
+                        <h3>
+
+                            Football
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Stats -->
+
+        <section class="stats">
+
+            <div class="container stats-grid">
+
+                <div class="stat-card">
+
+                    <h2>
+
+                        15+
+
+                    </h2>
+
+                    <p>
+
+                        Projects
+
+                    </p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h2>
+
+                        10+
+
+                    </h2>
+
+                    <p>
+
+                        Technologies
+
+                    </p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h2>
+
+                        100%
+
+                    </h2>
+
+                    <p>
+
+                        Dedication
+
+                    </p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h2>
+
+                        ∞
+
+                    </h2>
+
+                    <p>
+
+                        Learning
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Kaustuv Bhattacharjee.
+                All Rights Reserved.
+
+            </p>
+
+            <div class="socials">
+
+                <a href="#">GitHub</a>
+
+                <a href="#">LinkedIn</a>
+
+                <a href="#">Email</a>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>

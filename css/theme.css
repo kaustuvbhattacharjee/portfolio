@@ -1,0 +1,579 @@
+/* ===================================================
+   THEME.CSS
+   Global Theme Variables
+   Light & Dark Mode
+   =================================================== */
+
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===================================================
+   ROOT VARIABLES
+   =================================================== */
+
+:root{
+
+    /* COLORS */
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --secondary:#06b6d4;
+
+    --accent:#f97316;
+
+    --success:#10b981;
+
+    --danger:#ef4444;
+
+    --warning:#facc15;
+
+    /* BACKGROUND */
+
+    --bg:#ffffff;
+
+    --surface:#f8fafc;
+
+    --surface-2:#eef2f7;
+
+    /* TEXT */
+
+    --text:#111827;
+
+    --text-light:#6b7280;
+
+    --heading:#0f172a;
+
+    /* BORDER */
+
+    --border:#d1d5db;
+
+    /* SHADOW */
+
+    --shadow-sm:0 2px 8px rgba(0,0,0,.08);
+
+    --shadow-md:0 8px 20px rgba(0,0,0,.12);
+
+    --shadow-lg:0 20px 40px rgba(0,0,0,.18);
+
+    /* RADIUS */
+
+    --radius-sm:8px;
+
+    --radius:12px;
+
+    --radius-lg:20px;
+
+    --radius-xl:32px;
+
+    /* TRANSITIONS */
+
+    --transition:.3s ease;
+
+    --transition-long:.6s ease;
+
+    /* LAYOUT */
+
+    --container:1200px;
+
+    --header-height:80px;
+
+    /* FONT */
+
+    --font:'Poppins',sans-serif;
+
+}
+
+/* ===================================================
+   DARK MODE
+   =================================================== */
+
+body.dark{
+
+    --bg:#0f172a;
+
+    --surface:#1e293b;
+
+    --surface-2:#334155;
+
+    --text:#e5e7eb;
+
+    --text-light:#cbd5e1;
+
+    --heading:#ffffff;
+
+    --border:#475569;
+
+    --shadow-sm:0 2px 8px rgba(0,0,0,.30);
+
+    --shadow-md:0 10px 25px rgba(0,0,0,.40);
+
+    --shadow-lg:0 20px 45px rgba(0,0,0,.55);
+
+}
+
+/* ===================================================
+   GLOBAL RESET
+   =================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:var(--font);
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    transition:background var(--transition),
+               color var(--transition);
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button{
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+input,
+textarea,
+button{
+
+    border:none;
+
+    outline:none;
+
+}
+/* ===================================================
+   LAYOUT
+=================================================== */
+
+.container{
+
+    width:min(90%, var(--container));
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:5rem 0;
+
+}
+
+/* ===================================================
+   HEADINGS
+=================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color:var(--heading);
+
+    line-height:1.2;
+
+    margin-bottom:1rem;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    margin-bottom:3rem;
+
+}
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 32px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-radius:var(--radius);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.btn.secondary{
+
+    background:transparent;
+
+    color:var(--primary);
+
+    border:2px solid var(--primary);
+
+}
+
+.btn.secondary:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* ===================================================
+   CARDS
+=================================================== */
+
+.card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    padding:2rem;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ===================================================
+   FORM ELEMENTS
+=================================================== */
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-sm);
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    transition:var(--transition);
+
+}
+
+input:focus,
+textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+/* ===================================================
+   ACCESSIBILITY
+=================================================== */
+
+.skip-link{
+
+    position:absolute;
+
+    left:-999px;
+
+    top:10px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:12px 20px;
+
+    border-radius:var(--radius);
+
+    z-index:9999;
+
+}
+
+.skip-link:focus{
+
+    left:10px;
+
+}
+
+:focus-visible{
+
+    outline:3px solid var(--secondary);
+
+    outline-offset:3px;
+
+}
+
+/* ===================================================
+   SCROLLBAR
+=================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--surface);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ===================================================
+   TEXT SELECTION
+=================================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* ===================================================
+   HELPERS
+=================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-1{
+
+    margin-top:1rem;
+
+}
+
+.mt-2{
+
+    margin-top:2rem;
+
+}
+
+.mt-3{
+
+    margin-top:3rem;
+
+}
+
+.mb-1{
+
+    margin-bottom:1rem;
+
+}
+
+.mb-2{
+
+    margin-bottom:2rem;
+
+}
+
+.mb-3{
+
+    margin-bottom:3rem;
+
+}
+
+/* ===================================================
+   ANIMATIONS
+=================================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-in{
+
+    animation:fadeIn .8s ease forwards;
+
+}
+
+.slide-up{
+
+    animation:slideUp .8s ease forwards;
+
+}
+
+.slide-left{
+
+    animation:slideLeft .8s ease forwards;
+
+}
+
+.slide-right{
+
+    animation:slideRight .8s ease forwards;
+
+}

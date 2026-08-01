@@ -1,84 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio of Kaustuv Bhattacharjee, Aspiring Computer Science Professional specializing in AI, Cybersecurity, and Web Development.">
-    <meta name="keywords" content="Portfolio, Computer Science, AI, Cybersecurity, Web Development">
-    <meta name="author" content="Kaustuv Bhattacharjee">
-
     <title>Kaustuv Bhattacharjee | Portfolio</title>
 
+    <meta name="description"
+        content="Professional portfolio of Kaustuv Bhattacharjee - Computer Science Engineering Student, Web Developer, AI Enthusiast and Problem Solver.">
+
+    <meta name="keywords"
+        content="Portfolio, HTML5, CSS3, JavaScript, Web Developer, AI, CSE Student">
+
+    <meta name="author" content="Kaustuv Bhattacharjee">
+
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <script defer src="js/script.js"></script>
+
 </head>
 
 <body>
 
-    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <!-- Skip Navigation -->
 
-    <header>
-        <h1>Kaustuv Bhattacharjee</h1>
-        <p>Aspiring Computer Science Professional</p>
+    <a href="#main-content" class="skip-link">
+        Skip to Main Content
+    </a>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <h1 class="logo">KB.</h1>
+
+            <nav class="navbar" aria-label="Primary Navigation">
+
+                <button class="menu-toggle"
+                    aria-label="Toggle Navigation">
+
+                    ☰
+
+                </button>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html" class="active">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="projects.html">Projects</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <button id="themeToggle"
+                aria-label="Toggle Dark Mode">
+
+                🌙
+
+            </button>
+
+        </div>
+
     </header>
 
-    <nav aria-label="Primary Navigation">
-        <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Hero -->
 
     <main id="main-content">
 
-        <section id="hero">
+        <section class="hero">
 
-    <section id="hero">
+            <div class="container hero-grid">
 
-    <div class="hero-text">
+                <div class="hero-text">
 
-        <h2>Hello, I'm</h2>
+                    <h2>
 
-        <h1>Kaustuv Bhattacharjee</h1>
+                        Hello,
 
-        <h3>Aspiring Computer Science Professional</h3>
+                        I'm
 
-        <p>
-            Passionate about Artificial Intelligence, Cybersecurity,
-            Web Development and building accessible websites.
-        </p>
+                        <span>Kaustuv Bhattacharjee</span>
 
-        <a href="projects.html" class="btn">View Projects</a>
+                    </h2>
 
-        <a href="contact.html" class="btn-secondary">Contact Me</a>
+                    <p>
 
-    </div>
+                        Computer Science Engineering Student
+                        passionate about Web Development,
+                        Artificial Intelligence and Cybersecurity.
 
-</section>
-        <section id="skills">
-            <h2>Skills</h2>
+                    </p>
 
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-            </ul>
+                    <div class="hero-buttons">
+
+                        <a href="projects.html"
+                            class="btn">
+
+                            View Projects
+
+                        </a>
+
+                        <a href="contact.html"
+                            class="btn secondary">
+
+                            Hire Me
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
+                        alt="Profile Image">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+
+        <section class="skills">
+
+            <div class="container">
+
+                <h2 class="section-title">
+
+                    Skills
+
+                </h2>
+
+                <div class="skill-grid">
+
+                    <article class="card">
+
+                        <h3>HTML5</h3>
+
+                        <p>
+
+                            Semantic markup, SEO,
+                            Accessibility,
+                            Responsive Layout.
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>CSS3</h3>
+
+                        <p>
+
+                            Flexbox,
+                            Grid,
+                            Animation,
+                            Responsive Design.
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+
+                            DOM Manipulation,
+                            ES6,
+                            Dynamic UI,
+                            Fetch API.
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>Python</h3>
+
+                        <p>
+
+                            Data Analysis,
+                            Machine Learning,
+                            Automation.
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>SQL</h3>
+
+                        <p>
+
+                            Database Design,
+                            Queries,
+                            Optimization.
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>Git & GitHub</h3>
+
+                        <p>
+
+                            Version Control,
+                            Collaboration,
+                            Deployment.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Features -->
+
+        <section class="features">
+
+            <div class="container">
+
+                <h2 class="section-title">
+
+                    Why Hire Me?
+
+                </h2>
+
+                <div class="feature-grid">
+
+                    <div class="feature-box">
+
+                        <h3>
+
+                            Responsive Design
+
+                        </h3>
+
+                        <p>
+
+                            Works perfectly on every device.
+
+                        </p>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        <h3>
+
+                            Clean Code
+
+                        </h3>
+
+                        <p>
+
+                            Semantic HTML and maintainable CSS.
+
+                        </p>
+
+                    </div>
+
+                    <div class="feature-box">
+
+                        <h3>
+
+                            Accessibility
+
+                        </h3>
+
+                        <p>
+
+                            WCAG compliant and keyboard-friendly.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+
+                    Let's Build Something Amazing
+
+                </h2>
+
+                <a href="contact.html"
+                    class="btn">
+
+                    Contact Me
+
+                </a>
+
+            </div>
+
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Kaustuv Bhattacharjee. All Rights Reserved.</p>
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Kaustuv Bhattacharjee
+
+            </p>
+
+            <div class="socials">
+
+                <a href="#">GitHub</a>
+
+                <a href="#">LinkedIn</a>
+
+                <a href="#">Email</a>
+
+            </div>
+
+        </div>
+
     </footer>
 
-    <script src="js/script.js"></script>
-
 </body>
+
 </html>

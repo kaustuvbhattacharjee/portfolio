@@ -1,67 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Projects by Kaustuv Bhattacharjee">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Projects | Kaustuv Bhattacharjee</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="description"
+          content="Explore the portfolio projects of Kaustuv Bhattacharjee including Web Development, AI, Machine Learning and Cybersecurity projects.">
+
+    <meta name="keywords"
+          content="Portfolio, Projects, Web Development, AI, Cybersecurity">
+
+    <meta name="author"
+          content="Kaustuv Bhattacharjee">
+
+    <link rel="stylesheet"
+          href="css/theme.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <script defer
+            src="js/script.js"></script>
+
 </head>
 
 <body>
 
-<header>
-    <h1>My Projects</h1>
+<a href="#main-content"
+   class="skip-link">
+
+    Skip to Main Content
+
+</a>
+
+<header class="header">
+
+    <div class="container">
+
+        <h1 class="logo">
+
+            KB.
+
+        </h1>
+
+        <nav class="navbar"
+             aria-label="Primary Navigation">
+
+            <button
+                class="menu-toggle"
+                aria-label="Toggle Navigation">
+
+                ☰
+
+            </button>
+
+            <ul class="nav-links">
+
+                <li>
+
+                    <a href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="about.html">
+
+                        About
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="projects.html"
+                       class="active">
+
+                        Projects
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="contact.html">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <button id="themeToggle"
+                aria-label="Toggle Theme">
+
+            🌙
+
+        </button>
+
+    </div>
+
 </header>
 
-<nav aria-label="Primary Navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" aria-current="page">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+<main id="main-content">
 
-<main>
+<section class="page-hero">
 
-<section>
+    <div class="container">
 
-<h2>Featured Projects</h2>
+        <h2>
+
+            My Projects
+
+        </h2>
+
+        <p>
+
+            A collection of projects showcasing
+            responsive web development,
+            JavaScript programming,
+            Artificial Intelligence,
+            Machine Learning
+            and software engineering skills.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FILTER BUTTONS -->
+
+<section class="project-filter">
+
+<div class="container">
+
+    <h2 class="section-title">
+
+        Browse Projects
+
+    </h2>
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active"
+                data-filter="all">
+
+            All
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="web">
+
+            Web Development
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="ai">
+
+            AI / ML
+
+        </button>
+
+        <button class="filter-btn"
+                data-filter="security">
+
+            Cybersecurity
+
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- PROJECT GRID -->
+
+<section class="projects">
+
+<div class="container">
 
 <div class="project-grid">
 
-<article class="project-card">
+<!-- PROJECT 1 -->
 
-<h3>AI Skill Gap Analysis System</h3>
+<article class="project-card"
+         data-category="web">
 
-<p>
-An AI-powered web application that analyzes students' technical skills and recommends learning paths.
-</p>
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+         alt="Portfolio Website">
 
-<p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+    <div class="project-content">
 
-<a href="#">GitHub</a>
+        <h3>
+
+            Personal Portfolio Website
+
+        </h3>
+
+        <p>
+
+            Responsive portfolio created using
+            semantic HTML5,
+            CSS Grid,
+            Flexbox,
+            JavaScript,
+            accessibility best practices,
+            GitHub Pages deployment
+            and modern animations.
+
+        </p>
+
+        <div class="tech-stack">
+
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+
+        </div>
+
+        <div class="project-links">
+
+            <a href="#">
+
+                Live Demo
+
+            </a>
+
+            <a href="#">
+
+                GitHub
+
+            </a>
+
+        </div>
+
+    </div>
 
 </article>
 
-<article class="project-card">
+<!-- PROJECT 2 -->
 
-<h3>Accessible Portfolio Website</h3>
+<article class="project-card"
+         data-category="ai">
 
-<p>
-A semantic HTML5 portfolio website following WCAG accessibility guidelines.
-</p>
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800"
+         alt="AI Project">
 
-<p><strong>Technologies:</strong> HTML5, CSS3</p>
+    <div class="project-content">
 
-<a href="#">GitHub</a>
+        <h3>
+
+            AI Skill Gap Analysis
+
+        </h3>
+
+        <p>
+
+            Intelligent career recommendation
+            system for engineering students
+            using Machine Learning
+            to identify missing skills,
+            recommend certifications
+            and provide personalized learning paths.
+
+        </p>
+
+        <div class="tech-stack">
+
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Flask</span>
+
+        </div>
+
+        <div class="project-links">
+
+            <a href="#">
+
+                Live Demo
+
+            </a>
+
+            <a href="#">
+
+                GitHub
+
+            </a>
+
+        </div>
+
+    </div>
 
 </article>
+
+<!-- PROJECT 3 -->
+
+<article class="project-card"
+         data-category="security">
+
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800"
+         alt="Cybersecurity">
+
+    <div class="project-content">
+
+        <h3>
+
+            Cybersecurity Dashboard
+
+        </h3>
+
+        <p>
+
+            Interactive dashboard displaying
+            cyber attack statistics,
+            vulnerability reports,
+            threat monitoring
+            and security awareness metrics.
+
+        </p>
+
+        <div class="tech-stack">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
+        </div>
+
+        <div class="project-links">
+
+            <a href="#">
+
+                Live Demo
+
+            </a>
+
+            <a href="#">
+
+                GitHub
+
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PROJECT 4 -->
+
+<article class="project-card"
+         data-category="web">
+
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+         alt="E-Commerce Website">
+
+    <div class="project-content">
+
+        <h3>
+
+            Responsive E-Commerce Website
+
+        </h3>
+
+        <p>
+
+            Modern online shopping interface
+            featuring responsive layouts,
+            shopping cart UI,
+            product categories,
+            search functionality,
+            and mobile-first design.
+
+        </p>
+
+        <div class="tech-stack">
+
+            <span>HTML5</span>
+            <span>CSS Grid</span>
+            <span>JavaScript</span>
+
+        </div>
+
+        <div class="project-links">
+
+            <a href="#">Live Demo</a>
+
+            <a href="#">GitHub</a>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- PROJECT 5 -->
+
+<article class="project-card"
+         data-category="ai">
+
+    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800"
+         alt="Machine Learning">
+
+    <div class="project-content">
+
+        <h3>
+
+            Student Performance Predictor
+
+        </h3>
+
+        <p>
+
+            Machine Learning model that predicts
+            student academic performance
+            using historical datasets,
+            preprocessing,
+            feature engineering,
+            and classification algorithms.
+
+        </p>
+
+        <div class="tech-stack">
+
+            <span>Python</span>
+
+            <span>Pandas</span>
+
+            <span>Scikit-Learn</span>
+
+        </div>
+
+        <div class="project-links">
+
+            <a href="#">Live Demo</a>
+
+            <a href="#">GitHub</a>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- PROJECT 6 -->
+
+<article class="project-card"
+         data-category="security">
+
+    <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800"
+         alt="Security Scanner">
+
+    <div class="project-content">
+
+        <h3>
+
+            Network Security Scanner
+
+        </h3>
+
+        <p>
+
+            Prototype network scanner capable of
+            checking active devices,
+            identifying open ports,
+            and generating security reports
+            for educational purposes.
+
+        </p>
+
+        <div class="tech-stack">
+
+            <span>Python</span>
+
+            <span>Networking</span>
+
+            <span>Cybersecurity</span>
+
+        </div>
+
+        <div class="project-links">
+
+            <a href="#">Live Demo</a>
+
+            <a href="#">GitHub</a>
+
+        </div>
+
+    </div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECT STATISTICS -->
+
+<section class="stats">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Project Highlights
+
+</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3>
+
+15+
+
+</h3>
+
+<p>
+
+Projects Completed
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>
+
+10+
+
+</h3>
+
+<p>
+
+Technologies Used
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>
+
+100%
+
+</h3>
+
+<p>
+
+Responsive Design
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>
+
+24/7
+
+</h3>
+
+<p>
+
+Learning Mindset
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+Interested in working together?
+
+</h2>
+
+<p>
+
+I'm always excited to collaborate
+on innovative projects,
+internships,
+and software development opportunities.
+
+</p>
+
+<a href="contact.html"
+   class="btn">
+
+Contact Me
+
+</a>
 
 </div>
 
@@ -69,11 +637,31 @@ A semantic HTML5 portfolio website following WCAG accessibility guidelines.
 
 </main>
 
-<footer>
-<p>&copy; 2026 Kaustuv Bhattacharjee. All Rights Reserved.</p>
+<footer class="footer">
+
+<div class="container">
+
+<p>
+
+© 2026 Kaustuv Bhattacharjee.
+All Rights Reserved.
+
+</p>
+
+<div class="socials">
+
+<a href="#">GitHub</a>
+
+<a href="#">LinkedIn</a>
+
+<a href="#">Email</a>
+
+</div>
+
+</div>
+
 </footer>
 
-<script src="js/script.js"></script>
-
 </body>
+
 </html>

@@ -1,103 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Contact Kaustuv Bhattacharjee">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Contact | Kaustuv Bhattacharjee</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="description"
+          content="Contact Kaustuv Bhattacharjee for internships, freelance work, collaborations, or software development opportunities.">
+
+    <meta name="author"
+          content="Kaustuv Bhattacharjee">
+
+    <link rel="stylesheet"
+          href="css/theme.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <script defer
+            src="js/script.js"></script>
+
 </head>
 
 <body>
 
-<header>
-    <h1>Contact Me</h1>
-</header>
+<a href="#main-content"
+   class="skip-link">
 
-<nav aria-label="Primary Navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-    </ul>
+    Skip to Main Content
+
+</a>
+
+<header class="header">
+
+<div class="container">
+
+<h1 class="logo">
+
+KB.
+
+</h1>
+
+<nav class="navbar"
+     aria-label="Primary Navigation">
+
+<button class="menu-toggle"
+        aria-label="Toggle Navigation">
+
+☰
+
+</button>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="about.html">
+
+About
+
+</a>
+
+</li>
+
+<li>
+
+<a href="projects.html">
+
+Projects
+
+</a>
+
+</li>
+
+<li>
+
+<a href="contact.html"
+   class="active">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
 </nav>
 
-<main>
+<button id="themeToggle"
+        aria-label="Toggle Theme">
 
-<section>
+🌙
 
-<h2>Get In Touch</h2>
+</button>
 
-<form aria-label="Contact Form">
+</div>
+
+</header>
+
+<main id="main-content">
+
+<section class="page-hero">
+
+<div class="container">
+
+<h2>
+
+Contact Me
+
+</h2>
+
+<p>
+
+Let's discuss projects,
+internships,
+or opportunities to work together.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="contact-section">
+
+<div class="container contact-grid">
+
+<!-- CONTACT INFORMATION -->
+
+<div class="contact-info">
+
+<h2>
+
+Get In Touch
+
+</h2>
+
+<p>
+
+Feel free to reach out using the form.
+I'll respond as soon as possible.
+
+</p>
+
+<div class="contact-card">
+
+<h3>
+
+📧 Email
+
+</h3>
+
+<p>
+
+kaustuv@example.com
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+
+📱 Phone
+
+</h3>
+
+<p>
+
++91 XXXXX XXXXX
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+
+📍 Location
+
+</h3>
+
+<p>
+
+Chennai, Tamil Nadu, India
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>
+
+🎓 Education
+
+</h3>
+
+<p>
+
+B.Tech Computer Science Engineering
+
+</p>
+
+</div>
+
+</div>
+
+<!-- CONTACT FORM -->
+
+<div class="contact-form">
+
+<form id="contactForm">
 
 <div class="form-group">
 
-<label for="name">Full Name</label>
+<label for="name">
+
+Full Name
+
+</label>
 
 <input
+
 type="text"
+
 id="name"
+
 name="name"
+
+placeholder="Enter your name"
+
 required>
 
 </div>
 
 <div class="form-group">
 
-<label for="email">Email Address</label>
+<label for="email">
+
+Email Address
+
+</label>
 
 <input
+
 type="email"
+
 id="email"
+
 name="email"
+
+placeholder="example@email.com"
+
 required>
 
 </div>
 
 <div class="form-group">
 
-<label for="subject">Subject</label>
+<label for="subject">
+
+Subject
+
+</label>
 
 <input
+
 type="text"
+
 id="subject"
+
 name="subject"
+
+placeholder="Internship Opportunity"
+
 required>
 
 </div>
 
 <div class="form-group">
 
-<label for="message">Message</label>
+<label for="message">
+
+Message
+
+</label>
 
 <textarea
+
 id="message"
+
 name="message"
-rows="6"
+
+rows="8"
+
+placeholder="Write your message..."
+
 required></textarea>
 
 </div>
 
-<button type="submit">Send Message</button>
+<button
+
+type="submit"
+
+class="btn">
+
+Send Message
+
+</button>
 
 </form>
+
+</div>
+
+</div>
+
+</section>
+<!-- MAP SECTION -->
+
+<section class="map-section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Location
+
+</h2>
+
+<div class="map-placeholder">
+
+<iframe
+title="Google Map"
+src="https://www.google.com/maps?q=Chennai,+Tamil+Nadu&output=embed"
+loading="lazy"
+allowfullscreen>
+
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ SECTION -->
+
+<section class="faq">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+
+<h3>
+
+Are you available for internships?
+
+</h3>
+
+<p>
+
+Yes. I am actively looking for internship
+opportunities in Web Development,
+Artificial Intelligence,
+Cybersecurity,
+and Software Engineering.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+Can you build responsive websites?
+
+</h3>
+
+<p>
+
+Yes. I specialize in creating
+responsive,
+mobile-first,
+accessible websites using
+HTML5,
+CSS3,
+JavaScript,
+Flexbox,
+and CSS Grid.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+Do you work on AI projects?
+
+</h3>
+
+<p>
+
+Yes.
+I enjoy working on Machine Learning,
+Python,
+Data Analytics,
+and AI-powered applications.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SOCIAL LINKS -->
+
+<section class="social-section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Connect With Me
+
+</h2>
+
+<div class="social-grid">
+
+<a href="#"
+   class="social-card">
+
+🐙
+
+<h3>
+
+GitHub
+
+</h3>
+
+<p>
+
+Explore my repositories
+
+</p>
+
+</a>
+
+<a href="#"
+   class="social-card">
+
+💼
+
+<h3>
+
+LinkedIn
+
+</h3>
+
+<p>
+
+Professional Profile
+
+</p>
+
+</a>
+
+<a href="#"
+   class="social-card">
+
+📧
+
+<h3>
+
+Email
+
+</h3>
+
+<p>
+
+Let's collaborate
+
+</p>
+
+</a>
+
+<a href="#"
+   class="social-card">
+
+🌐
+
+<h3>
+
+Portfolio
+
+</h3>
+
+<p>
+
+View my latest work
+
+</p>
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 </main>
 
-<footer>
+<!-- FOOTER -->
 
-<p>&copy; 2026 Kaustuv Bhattacharjee. All Rights Reserved.</p>
+<footer class="footer">
+
+<div class="container">
+
+<p>
+
+© 2026 Kaustuv Bhattacharjee.
+All Rights Reserved.
+
+</p>
+
+<div class="socials">
+
+<a href="#">GitHub</a>
+
+<a href="#">LinkedIn</a>
+
+<a href="#">Email</a>
+
+</div>
+
+</div>
 
 </footer>
 
-<script src="js/script.js"></script>
-
 </body>
+
 </html>
